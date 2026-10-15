@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mentalo | Your Mental Wellness Space</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+<body>
+
+    <header class="navbar">
+        <a class="logo" href="/">mentalo<span>.</span></a>
+
+        <nav>
+            <a href="#explore">Explore</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="eyebrow">YOUR MENTAL WELLNESS SPACE</p>
+
+            <h1>A little care for your mind goes a long way.</h1>
+
+            <p>
+                Learn about mental health, understand your feelings,
+                and take small steps towards wellbeing.
+            </p>
+
+            <a class="button" href="#explore">Explore Mentalo</a>
+        </section>
+
+        <section class="quote-card">
+            <p class="eyebrow">A LITTLE REMINDER</p>
+
+            <h2 id="quote">
+                You don't have to have everything figured out today.
+            </h2>
+
+            <button id="new-quote" type="button">New quote ↗</button>
+        </section>
+
+        <section id="explore" class="explore">
+            <p class="eyebrow">A PLACE TO BEGIN</p>
+            <h2>Explore your wellbeing</h2>
+
+            <div class="topics">
+                <article class="topic">
+                    <h3>Learn</h3>
+                    <p>
+                        Understand mental health in a safe,
+                        welcoming space.
+                    </p>
+                </article>
+
+                <article class="topic">
+                    <h3>Reflect</h3>
+                    <p>
+                        Take a moment to check in with yourself.
+                    </p>
+                </article>
+
+                <article class="topic">
+                    <h3>Find support</h3>
+                    <p>
+                        Learn how to find appropriate professional help.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="about">
+        Mentalo is an educational project, not a diagnostic tool
+        or a substitute for professional care.
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
